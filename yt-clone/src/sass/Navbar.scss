@@ -1,0 +1,40 @@
+// Colors
+$navbar-background-color: #282828;
+
+.navbar {
+  color: #ffffff;
+  z-index: 1; // To keep above other things
+  background-color: $navbar-background-color;
+
+  .container {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .btn {
+      background: none;
+      border: none;
+      padding: 0.25rem 0.5rem;
+      margin-left: 0.5rem;
+      filter: invert(1); // for color change
+
+      &:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        opacity: 0.8;
+      }
+    } // btn
+
+    .search {
+      width: 500px;
+      height: 25px;
+    }
+    // .searchBtn {
+    //   height: 50px;
+    //   width: 50px;
+    // }
+  } // container
+}

@@ -13,12 +13,16 @@
     "mongoose": "^5.9.1",
     "nodemon": "^2.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "client": "npm start --prefix yt-clone",
-    "dev": "concurrently \"npm run server\" \"npm run client\" "
+    "sass": "node-sass -w yt-clone/src/sass -o yt-clone/src -r",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "dev2": "concurrently \"npm run sass\" \"npm run client\" "
   },
   "repository": {
     "type": "git",

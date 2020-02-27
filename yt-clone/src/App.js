@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
 
+// Component Imports
+import Navbar from './components/layout/Navbar';
+
 function App() {
-  return (
-    <div>
-      <h2>YouTube</h2>
-    </div>
-  );
+  return <Navbar />;
 }
 
 export default App;

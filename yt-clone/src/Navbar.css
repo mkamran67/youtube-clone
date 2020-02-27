@@ -22,12 +22,3 @@
     .navbar .container .search {
       width: 500px;
       height: 25px; }
-
-* {
-  padding: 0;
-  margin: 0;
-  font-size: 16pt;
-  box-sizing: border-box; }
-
-body {
-  background-color: black; }
