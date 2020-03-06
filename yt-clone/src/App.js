@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './sass/app.css';
 
 // Component Imports
 import Navbar from './components/layout/Navbar';

@@ -1,0 +1,63 @@
+// Colors
+$navbar-background-color: #282828;
+
+.navbar {
+  color: #ffffff;
+  z-index: 1; // To keep above other things
+  background-color: $navbar-background-color;
+
+  .container {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .yt-icon {
+      height: 25px;
+      width: 25px;
+      svg {
+        height:25px;
+        width: 25px;
+      }
+    }
+
+    // Hamburger button
+    .btn {
+      background: none;
+      border: none;
+      padding: 0.25rem 0.5rem;
+      margin-left: 0.5rem;
+      filter: invert(1); // for color change
+
+      &:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        opacity: 0.8;
+      }
+    } // btn
+
+    // search input
+    .search {
+      width: 500px;
+      height: 25px;
+    }
+
+    // search button
+    .searchBtn {
+      height: 32px;
+      width: 65px;
+      padding: 0 5px;
+      background-color: #232628;
+      border-color: rgb(92, 92, 92);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px;
+      border-radius: 2px;
+      svg {
+        fill: #ffffff;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  } // container
+}
