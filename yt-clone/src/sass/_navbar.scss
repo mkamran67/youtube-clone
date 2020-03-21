@@ -15,11 +15,19 @@ $navbar-background-color: #282828;
     justify-content: space-between;
 
     .yt-icon {
-      height: 25px;
-      width: 25px;
+      align-self: flex-start;
+      margin: auto 0;
+      padding: 0 15px;
       svg {
-        height:25px;
-        width: 25px;
+        height: 25px;
+        width: 80px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        svg {
+          opacity: 0.8;
+        }
       }
     }
 
@@ -38,25 +46,82 @@ $navbar-background-color: #282828;
       }
     } // btn
 
-    // search input
-    .search {
-      width: 500px;
-      height: 25px;
+    // search form
+    .search-form {
+      margin: 0 140px;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0%;
+      padding: 2% 8%;
+
+      // search input form
+      input {
+        height: 32px;
+        width: 100%;
+        background-color: rgb(17, 18, 19);
+        box-shadow: rgba(0, 0, 0, 0) 0px 1px 2px inset;
+        color: rgba(255, 255, 255, 0.88);
+        border: none;
+        padding: 2px 10px;
+        align-items: center;
+      }
+
+      // search button
+      button {
+        margin: auto 0;
+        height: 32px;
+        width: 65px;
+        padding: 0 5px;
+        background-color: #232628;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px;
+        border-radius: 0 2px 2px 0;
+        border: 2px solid #2c2c2c;
+
+        svg {
+          fill: white;
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          svg {
+            opacity: 0.8;
+          }
+        }
+      }
     }
 
-    // search button
-    .searchBtn {
-      height: 32px;
-      width: 65px;
-      padding: 0 5px;
-      background-color: #232628;
-      border-color: rgb(92, 92, 92);
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px;
-      border-radius: 2px;
-      svg {
-        fill: #ffffff;
-        height: 20px;
-        width: 20px;
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      list-style: none;
+      margin-right: 35px;
+      min-width: 225px;
+
+      li {
+        padding: 0 8px;
+        transition: border;
+
+        a {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.88);
+          &:hover {
+            color: rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+
+      .user-icon {
+        color: #ffffff;
+        padding: 10px;
+        margin: 10px 5px;
+        font-size: 20px;
+        background-color: #512da7;
+        border-radius: 5px;
       }
     }
   } // container

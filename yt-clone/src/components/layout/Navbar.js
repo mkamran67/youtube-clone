@@ -10,20 +10,29 @@ const Navbar = () => {
         <button className="btn" toggleable="true">
           <Hamburger />
         </button>
-        <i className="yt-icon"><YTIcon/></i>
-        <form action="!#" className="search-input">
-          <input type="text" placeholder="Search" className="search" />
-          <button className="searchBtn">
+        <i className="yt-icon">
+          <YTIcon />
+        </i>
+        <form action="!#" className="search-form">
+          <input type="text" placeholder="Search" />
+          <button>
             <SearchBtn />
           </button>
         </form>
-        <button className="search-icon-btn"></button>
         <ul>
-          <li className="navbar-item">Go Live</li>
-          <li className="navbar-item">Apps</li>
-          <li className="navbar-item">Notify</li>
           <li className="navbar-item">
-            <i>H</i>
+            <a href="#!">Queue</a>
+          </li>
+          <li className="navbar-item">
+            <a href="#!">History</a>
+          </li>
+          <li className="navbar-item">
+            <a href="#!">About</a>
+          </li>
+          <li className="navbar-item">
+            <a href="#!" className="user-icon">
+              H
+            </a>
           </li>
         </ul>
       </div>
