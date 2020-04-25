@@ -1,2 +1,4 @@
 export const SEARCH_VIDEOS = 'SEARCH_VIDEOS';
 export const SEARCH_ERROR = 'SEARCH_ERROR';
+export const LOADING_TRUE = 'LOADING_TRUE';
+export const LOADING_FALSE = 'LOADING_FALSE';

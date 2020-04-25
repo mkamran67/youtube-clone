@@ -1,9 +1,15 @@
-import { SEARCH_VIDEOS, SEARCH_ERROR } from '../actions/types';
+import {
+  SEARCH_VIDEOS,
+  SEARCH_ERROR,
+  LOADING_FALSE,
+  LOADING_TRUE,
+} from '../actions/types';
 
 const initialState = {
   results: [],
-  loading: false,
+  loading: true,
   isError: false,
+  nextPageToken: '',
 };
 
 //
@@ -19,9 +25,20 @@ export default (state = initialState, action) => {
     case SEARCH_VIDEOS: {
       return {
         ...state,
+        nextPageToken: action.payload.nextPageToken,
+        results: action.payload.items,
+      };
+    }
+    case LOADING_FALSE: {
+      return {
+        ...state,
         loading: false,
-        isError: false,
-        results: [1, 2, 3, 4, 5],
+      };
+    }
+    case LOADING_TRUE: {
+      return {
+        ...state,
+        loading: true,
       };
     }
     default: {

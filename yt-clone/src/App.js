@@ -13,7 +13,7 @@ function App() {
       <Fragment>
         <Navbar />
         <div>
-          <h3>List Here</h3>
+          <h3>Search Result List Here</h3>
           <SearchResults />
         </div>
       </Fragment>
